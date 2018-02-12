@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import styles from './App.scss'
 import Header from './Header'
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        {/* section header */}
-          <Header/>
-        {/* section main */}
-
-        {/* section footer */}
-        <p>APP HERE !</p>
+        <Header />
+        <div className='container'>
+          <div className={styles['content']}>
+            {this.props.children}
+          </div>
+        </div>
       </div>
     )
   }

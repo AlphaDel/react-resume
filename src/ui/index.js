@@ -4,5 +4,8 @@ import './index.scss'
 import registerServiceWorker from './registerServiceWorker'
 import routes from './routes'
 
-render(routes(),document.getElementById('root'))
+const root = document.getElementById('root')
+render(
+    routes(),root
+)
 registerServiceWorker()
