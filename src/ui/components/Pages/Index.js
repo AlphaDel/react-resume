@@ -1,10 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Page from './Page'
 
-export default class Pages extends Component {
-
-  render() {
-    return (
+const Pages = ({
+      pages,
+      onReloadPages
+    }) => (
+      <div className="container">
+      <button 
+        className='button'
+        onClick={() => onReloadPages()}>
+        Reload Pages
+      </button>
+      <hr />
       <table className='table'>
       <thead>
           <tr>
@@ -15,7 +22,7 @@ export default class Pages extends Component {
         </thead>
         <tbody>
           {
-            this.props.pages.map((page) => (
+            pages.map((page) => (
               <Page
                 key={page.id}
                 id={page.id}
@@ -24,6 +31,7 @@ export default class Pages extends Component {
           }
         </tbody>
       </table>
+      </div>
     )
-  }
-}
+
+export default Pages
