@@ -74,13 +74,13 @@ module.exports = function(proxy, allowedHost) {
     https: protocol === 'https',
     host: host,
     overlay: false,
-    historyApiFallback: {
-      // Paths with dots should still use the history fallback.
-      // See https://github.com/facebookincubator/create-react-app/issues/387.
-      disableDotRule: true,
-    },
+    historyApiFallback: true,
     public: allowedHost,
-    proxy,
+    proxy: {
+      '/api/*': {
+        target: 'http://127.0.0.1:5000'
+      }
+    },
     before(app) {
       // This lets us open files from the runtime error overlay.
       app.use(errorOverlayMiddleware());

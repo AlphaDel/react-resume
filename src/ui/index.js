@@ -1,11 +1,28 @@
+import React from 'react'
 import { render } from 'react-dom'
 // import './index.css'
 import './index.scss'
 import registerServiceWorker from './registerServiceWorker'
-import routes from './routes'
+import { AppContainer } from 'react-hot-loader'
+import Root from './containers/Root'
 
-const root = document.getElementById('root')
+const rootEl = document.getElementById('root')
 render(
-    routes(),root
+    <AppContainer>
+        <Root />
+    </AppContainer>,rootEl
 )
+
+if (module.hot) {
+    module.hot.accept('./containers/Root', () => {
+        const NextRootApp = require('./containers/Root').default
+
+        render(
+            <AppContainer>
+                <NextRootApp />
+            </AppContainer>,rootEl
+        )
+    })
+}
+
 registerServiceWorker()
