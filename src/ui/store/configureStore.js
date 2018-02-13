@@ -1,14 +1,26 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from 'redux-thunk'
-
+import { createStore } from 'redux'
 import rootReducer from '../reducers'
 
-const composeEnhancers = (process.env.NODE_ENV === 'development') ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__  || compose : compose
+const promise = (store) => {
+  const next = store.dispatch
 
-const store = createStore(rootReducer)
-store.subscribe(() => {
-    console.log('State: ', store.getState().toString())
-  })
-  
+  return (action) => {
+    if (typeof action.then === 'function')
+      return action.then(next)
+    return next(action)
+  }
+}
 
-export default createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
+export default function configureStore(initialState) {
+  const store = createStore(rootReducer, initialState)
+  store.dispatch = promise(store)
+
+  if (module.hot) {
+    module.hot.accept('../reducers', () => {
+      const nextRootReducer = require('../reducers/index')
+      store.replaceReducer(nextRootReducer)
+    })
+  }
+
+  return store
+}

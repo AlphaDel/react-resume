@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router-dom'
 export default class Page extends Component {
     
     render () {
@@ -10,7 +10,7 @@ export default class Page extends Component {
                 <th>{id}</th>
                 <td>{title}</td>
                 <td>
-                    <a href='javascript:void(0)'>show</a>
+                <Link to={{ pathname: `/pages/${id}` }}>Show</Link>
                 </td>
             </tr>
         )

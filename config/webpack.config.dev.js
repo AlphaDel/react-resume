@@ -45,9 +45,11 @@ module.exports = {
     // Note: instead of the default WebpackDevServer client, we use a custom one
     // to bring better experience for Create React App users. You can replace
     // the line below with these two lines if you prefer the stock client:
-    // require.resolve('webpack-dev-server/client') + '?/',
-    // require.resolve('webpack/hot/dev-server'),
+    'react-hot-loader/patch',
+    //require.resolve('webpack-dev-server/client') + '?http://localhost:3000',
+    require.resolve('webpack/hot/only-dev-server'),
     require.resolve('react-dev-utils/webpackHotDevClient'),
+    
     // Finally, this is your app's code:
     paths.appIndexJs,
     paths.appGlobalCSS,
@@ -152,47 +154,12 @@ module.exports = {
               // It enables caching results in ./node_modules/.cache/babel-loader/
               // directory for faster rebuilds.
               cacheDirectory: true,
+              plugins: [
+                'react-hot-loader/babel'
+              ]
             },
           },
-          // "postcss" loader applies autoprefixer to our CSS.
-          // "css" loader resolves paths in CSS and adds assets as dependencies.
-          // "style" loader turns CSS into JS modules that inject <style> tags.
-          // In production, we use a plugin to extract that CSS to a file, but
-          // in development "style" loader enables hot editing of CSS.
-          
-          // {
-          //   test: /\.css$/,
-          //   use: [
-          //     require.resolve('style-loader'),
-          //     {
-          //       loader: require.resolve('css-loader'),
-          //       options: {
-          //         importLoaders: 1,
-          //       },
-          //     },
-          //     {
-          //       loader: require.resolve('postcss-loader'),
-          //       options: {
-          //         // Necessary for external CSS imports to work
-          //         // https://github.com/facebookincubator/create-react-app/issues/2677
-          //         ident: 'postcss',
-          //         plugins: () => [
-          //           require('postcss-flexbugs-fixes'),
-          //           autoprefixer({
-          //             browsers: [
-          //               '>1%',
-          //               'last 4 versions',
-          //               'Firefox ESR',
-          //               'not ie < 9', // React doesn't support IE8 anyway
-          //             ],
-          //             flexbox: 'no-2009',
-          //           }),
-          //         ],
-          //       },
-          //     },
-          //   ],
-          // },
-
+      
           {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
@@ -284,7 +251,9 @@ module.exports = {
     // You can remove this if you don't use Moment.js:
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
-    new ExtractTextPlugin({ filename: 'styles.css', allChunks: true }),
+    new ExtractTextPlugin({ 
+      filename: '[name].[contenthash].css', 
+      disable: process.env.NODE_ENV === "development" }),
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
@@ -301,13 +270,4 @@ module.exports = {
   performance: {
     hints: false,
   },
-
-  devServer: {
-    historyApiFallback: true,
-    proxy: {
-      '/api/*': {
-        target: 'http://127.0.0.1:5000'
-      }
-    }
-  }
 };
