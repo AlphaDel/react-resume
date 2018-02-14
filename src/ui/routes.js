@@ -1,9 +1,7 @@
 import React from 'react'
 import { Route, BrowserRouter } from 'react-router-dom'
 import { App, Home } from './components'
-import { Provider } from 'react-redux'
-import store from './store/configureStore'
-import { Pages, ShowPage, NewPage } from './containers'
+import { Pages, ShowPage } from './containers'
 
 export default () => {
     return (

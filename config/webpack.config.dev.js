@@ -46,7 +46,7 @@ module.exports = {
     // to bring better experience for Create React App users. You can replace
     // the line below with these two lines if you prefer the stock client:
     'react-hot-loader/patch',
-    //require.resolve('webpack-dev-server/client') + '?http://localhost:3000',
+    'webpack-dev-server/client?http://localhost:3000',
     require.resolve('webpack/hot/only-dev-server'),
     require.resolve('react-dev-utils/webpackHotDevClient'),
     

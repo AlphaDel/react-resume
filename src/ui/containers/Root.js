@@ -3,10 +3,14 @@ import { Provider } from 'react-redux'
 import routes from '../routes'
 import configureStore from '../store/configureStore'
 
-export default class App extends Component {
+export default class Root extends Component {
+  
   render() {
+    const { initialState } = this.props
+    const store = configureStore(initialState)
+    
     return (
-      <Provider store={configureStore() } key='provider'>
+      <Provider store={store} key='provider'>
         {routes()}
       </Provider>
     )

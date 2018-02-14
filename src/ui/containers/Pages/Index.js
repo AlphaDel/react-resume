@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import fetch from 'isomorphic-fetch'
-import { PAGES_ENDPOINT } from '../../constants/endpoints'
 import { Pages } from '../../components'
 import { loadPages } from '../../actions/page'
 
