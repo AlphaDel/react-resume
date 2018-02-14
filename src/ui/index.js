@@ -6,10 +6,11 @@ import registerServiceWorker from './registerServiceWorker'
 import { AppContainer } from 'react-hot-loader'
 import Root from './containers/Root'
 
+const initialState = window.__INITIAL_STATE__
 const rootEl = document.getElementById('root')
 render(
     <AppContainer>
-        <Root />
+        <Root initialState={initialState} />
     </AppContainer>,rootEl
 )
 
@@ -19,7 +20,7 @@ if (module.hot) {
 
         render(
             <AppContainer>
-                <NextRootApp />
+                <NextRootApp initialState={initialState}/>
             </AppContainer>,rootEl
         )
     })

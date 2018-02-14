@@ -9,7 +9,7 @@ class Home extends Component {
         return (
             <div>
                 <h2 className={styles['title']}>
-                    Welcome to React Utility!!!!
+                    TEST HMR !
                 </h2>
             </div>
         )
