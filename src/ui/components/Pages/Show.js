@@ -1,19 +1,19 @@
 import React from 'react'
 
 const ShowPage = ({
-  data,
+  title,
   content
 }) => (
    
     <div className='container'>
     <article>
     {
-      data.map((data) => (
-        <div key={data.id}>
-          <h1>{data.title}</h1>
-          <p>{data.content}</p>
-        </div>
-      ))
+      <article>
+        <h1>{title}</h1>
+        <p>
+          {content}
+        </p>
+      </article>
     }
 
     </article>

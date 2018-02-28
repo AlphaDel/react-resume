@@ -11,7 +11,7 @@ export default () => {
                 <Route exact path='/' component={ Home } />
                     
                 <Route exact path='/pages' component={ Pages } />
-                <Route exact path='/pages/:id' component={ ShowPage } />
+                <Route exact path='/page/:id' component={ ShowPage } />
             </div>
         </BrowserRouter>
     )
