@@ -1,18 +1,38 @@
 @import '../../theme/variables';
-
 .header {
     background: $dark-gray1-color;
-    padding: 1rem;
     width: 100%;
-    position: fixed;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position:absolute;
     left: 0;
     top: 0;
-    box-sizing: border-box;
+
   }
   
   .brand {
     color: $white-color;
-    text-decoration: none;
+    text-decoration: none !important;
+    &__link {
+      padding: 1rem;
+      color: $green1-color;
+      text-decoration: none !important;
+    }
+    &__link {
+      padding: 1rem;
+      color: $green1-color;
+      text-decoration: none !important;
+      &:hover {
+        color:$white-color-hover-link;
+      }
+      &:focus {
+        color: $green1-color;
+      }
+    }
+  }
+  .link {
+    color: $green1-color;
+    text-decoration: none !important;
   }
   
   .menu {
@@ -30,6 +50,18 @@
     &__link {
       padding: 1rem;
       color: $green1-color;
-      text-decoration: none;
+      text-decoration: none !important;
+    }
+    &__link {
+      padding: 1rem;
+      color: $green1-color;
+      text-decoration: none !important;
+      &:hover {
+        color:$white-color-hover-link;
+      }
+      &:focus {
+        color: $green1-color;
+      }
     }
   }
+

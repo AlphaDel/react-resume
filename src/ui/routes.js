@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, BrowserRouter } from 'react-router-dom'
 import { App, Home } from './components'
-import { Pages, ShowPage } from './containers'
+import { Pages, ShowPage, Portfolio } from './containers'
 
 export default () => {
     return (
@@ -12,6 +12,7 @@ export default () => {
                     
                 <Route exact path='/pages' component={ Pages } />
                 <Route exact path='/page/:id' component={ ShowPage } />
+                <Route exact path='/portfolio' component={ Portfolio } />
             </div>
         </BrowserRouter>
     )

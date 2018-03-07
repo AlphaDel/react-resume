@@ -53,6 +53,7 @@ module.exports = {
     // Finally, this is your app's code:
     paths.appIndexJs,
     paths.appGlobalCSS,
+    
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
@@ -163,17 +164,8 @@ module.exports = {
           {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
-              fallback: 'style-loader',
-              use: [
-                {
-                  loader: 'css-loader',
-                  options: {
-                    modules: true,
-                    localIdentName: '[name]__[local]__[hash:base64:5]'
-                  }
-                },
-              'postcss-loader'
-              ]
+              fallback: "style-loader",
+              use: "css-loader"
             })
           },
 
@@ -194,6 +186,18 @@ module.exports = {
               'sass-loader'
               ]
             })
+          },
+
+          {
+            test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+            use: [{
+              loader: require.resolve('file-loader'),
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'assets/',    // where the fonts will go
+                publicPath: '../'       // override the default path
+              }
+            }]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
@@ -254,6 +258,12 @@ module.exports = {
     new ExtractTextPlugin({ 
       filename: '[name].[contenthash].css', 
       disable: process.env.NODE_ENV === "development" }),
+    
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
