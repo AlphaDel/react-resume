@@ -21,7 +21,7 @@ const WorkAndEducation = () => (
         className="vertical-timeline-element--work"
         date="2017 - present"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<i class="fas fa-briefcase fa-lg"></i>}
+        icon={<i className="fas fa-briefcase fa-lg"></i>}
       >
         <h3 className="vertical-timeline-element-title">GENERAL ELECTRONIC COMMERCE SERVICES</h3>
         <h4 className="vertical-timeline-element-subtitle">Bangkok Thailand</h4>
@@ -36,7 +36,7 @@ const WorkAndEducation = () => (
         className="vertical-timeline-element--work"
         date="2016 - 2017"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        icon={<i class="fas fa-briefcase fa-lg"></i>}
+        icon={<i className="fas fa-briefcase fa-lg"></i>}
       >
         <h3 className="vertical-timeline-element-title">Trainee At GENERAL ELECTRONIC COMMERCE SERVICES</h3>
         <h4 className="vertical-timeline-element-subtitle">Bangkok Thailand</h4>
@@ -49,7 +49,7 @@ const WorkAndEducation = () => (
         className="vertical-timeline-element--education"
         date="April 2013"
         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={<i class="fas fa-graduation-cap fa-lg"></i>}
+        icon={<i className="fas fa-graduation-cap fa-lg"></i>}
       >
         <h3 className="vertical-timeline-element-title">Suranaree University Of Technology</h3>
         <h4 className="vertical-timeline-element-subtitle">Nakhon Ratchasima</h4>

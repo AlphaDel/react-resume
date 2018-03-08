@@ -17,20 +17,6 @@ export default class Header extends Component {
           <ul className={styles['menu']}>
             <li className={styles['menu__item']}>
               <Link
-                to={{ pathname: '/pages' }}
-                className={styles['menu__link']}>
-                All pages
-              </Link>
-            </li>
-            <li className={styles['menu__item']}>
-              <Link
-                to={{ pathname: '/' }}
-                className={styles['menu__link']}>
-                About us
-              </Link>
-            </li>
-            <li className={styles['menu__item']}>
-              <Link
                 to={{ pathname: '/portfolio' }}
                 className={styles['menu__link']}>
                 Portfolio

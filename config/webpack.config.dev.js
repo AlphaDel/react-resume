@@ -144,6 +144,17 @@ module.exports = {
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
+          {
+            test: [/\.svg$/],
+            loader: require.resolve('svg-inline-loader'),
+            
+          },
+          {
+            test: [/\.txt$/],
+            loader: require.resolve('raw-loader'),
+            
+          },
+
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,

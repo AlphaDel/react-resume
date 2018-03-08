@@ -1,8 +1,9 @@
 import React from 'react';
-
 import styles from './Portfolio.scss'
 
 const AboutMe = () => (
+
+    
 
 <div className={styles['container']}>
     <div className={styles['container_aboutMe']}>
