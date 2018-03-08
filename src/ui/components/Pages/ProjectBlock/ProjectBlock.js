@@ -31,7 +31,6 @@ const ProjectBlock = ({ projects }) => (
             iconStyle={appTheme[project.subcategory + 'Color'].style}
             date={project.date}
           >
-          {console.log('project.subcategory')}
             <div className="ResumeProjectsBlock-technologies">
               {project.technologies.map((technology, j) =>
                 <Chip
