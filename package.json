@@ -2,7 +2,7 @@
   "name": "react-utility",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wuttinanDEV.github.io/react-utility",
+  "homepage": "http://wuttinanDEV.github.io/react-resume",
   "dependencies": {
     "age-calculator": "^1.0.0",
     "autoprefixer": "7.1.6",
