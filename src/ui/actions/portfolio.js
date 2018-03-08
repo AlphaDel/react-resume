@@ -12,7 +12,7 @@ import {
 
 export function loadPagePortfolio() {
     return { 
-      type: LOAD_PAGES_SUCCESS,
+      type: LOAD_PAGE_SUCCESS,
       payload
     }
   }
