@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "title": "Resume - Wuttinan : web developer in Thailand",
+    "keywords": "React, Angular, PHP, Resume",
+    "description": ""
+  },
+  "firstName": "Wuttinan",
+  "lastName": "Chaoyos",
+  "emailAddress": "wuttinan.wch@gmail.com",
+  "headline": "Web Developer",
+  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, Mysql, MSSQL. My favourite stack : Angular, React, Docker",
+  "pictureUrl": "https://lh3.googleusercontent.com/PrmPRDZrazDoKSPsqliUfent7nHA31oWfkNyo8LOxBu_A4mBO5SCOWdygTLgGxsGjSGyESiAepiWvABTGXpac07waeCNlzAKmt3fXIdUaGmvKf29Tv45fno9aoPKk3j7dc5Fb2gCE3eDjHgUdZ7lPLOe-a_awEhbOtWPQje89C-V1W5wpCTMN3lPq3S3H1jPZjLUH7c49mix_WJDVjTGlH5jojo4vtB8pX-LCOxLaIxpfvexbMspYcLqjR8BuE4bSmLwG2WGcoPuqsrKiczr6-40s4G810_l0uF_rJPz6olKmXFVujkOKZZfHSLSKB3_VBZQM2ZGiMzRVRjCkYxP0iZvw76dVMTrwIype2NnZ8MH3GfXSvoSkZYBjp96qJWtmpMTqfjJa-eziAlsL96Mb-j7lnmE7dZGAmdVxhgb8RTE69g_Wz6cS4g2-BGX-dqQ8JaS8uDNy_y5upMHBi-ZYmFinm7GhTlEOHsXUilM6tdXhRe-DfvsPgJKzE9lvE4SRcwVOP7gXt9cYWXHOZzE64TtG9G0xBAU4NQx9T3PXt2TNyAbNpMjKsJkSG4wDATN-O0dUQorNy_eKd0fRYANDGdA-zfGoOkUZWmNKdeHmX5pITHu0NXkO5N20zgVEKWFlX0Fom5OxtjgzBRcIrTIDpsUG24kl2sC=s339-no",
+  "dateOfBirth": "1994-10-17",
+  "mainAddress": "Bangkok Thailand",
+  "websites": [
+    {
+      "type": "Github",
+      "url": "https://www.github.com/wuttinanDEV"
+    }
+  ],
+  "phoneNumbers": [
+    {
+      "type": "Work",
+      "number": ""
+    },
+    {
+      "type": "Personal",
+      "number": "+66 845380145"
+    }
+  ],
+  "imAccounts": [
+    {
+      "type": "Line",
+      "name": "shinbuntu"
+    },
+    {
+      "type": "Skype",
+      "name": "monnot.stephane"
+    }
+  ],
+  "snsAccounts": [
+    {
+      "name": "Linkedin",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/monnotstephane/"
+    },
+    {
+      "name": "Github",
+      "icon": "github",
+      "url": "https://github.com/stephane-monnot"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Osaka",
+      "country": "Japan",
+      "isCurrent": true
+    },
+    {
+      "name": "Lyon",
+      "country": "France"
+    }
+  ],
+  "positions": [
+    {
+      "title": "Programmer",
+      "summary": "Angular, JAVA (Spring boot), MSSQL, MYSQL, Linux",
+      "startDate": "2017",
+      "endDate": "Today",
+      "isCurrent": true,
+      "company": "GEC"
+    },
+    {
+      "title": "Trainee",
+      "summary": "Angular, JAVA (JPA), Rebot framework, Agile Scrum",
+      "startDate": "2016",
+      "endDate": "2017",
+      "isCurrent": true,
+      "company": "GEC"
+    }
+    
+  ],
+  "interests": "",
+  "languages": [
+    {
+      "name": "French",
+      "level": "Native",
+      "levelNumber": 10
+    },
+    {
+      "name": "English",
+      "level": "Professional working proficiency",
+      "levelNumber": 6
+    },
+    {
+      "name": "Japanese",
+      "level": "Professional working proficiency",
+      "levelNumber": 6
+    },
+    {
+      "name": "Korean",
+      "level": "Elementary proficiency",
+      "levelNumber": 2
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML5",
+      "language": {
+        "name": "HTML5",
+        "style": "html"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "React",
+      "language": {
+        "name": "Javascript",
+        "style": "javascript"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "Angular",
+      "language": {
+        "name": "Javascript",
+        "style": "javascript"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    
+    {
+      "name": "Redux",
+      "language": {
+        "name": "Javascript",
+        "style": "javascript"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "ES6",
+      "language": {
+        "name": "Javascript",
+        "style": "javascript"
+      },
+      "category": {
+        "name": "Languages"
+      }
+    },
+
+    {
+      "name": "Bootstrap 3",
+      "language": {
+        "name": "Bootstrap",
+        "style": "bootstrap"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    
+    {
+      "name": "Laravel 5",
+      "language": {
+        "name": "PHP",
+        "style": "php"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "Python",
+      "language": {
+        "name": "Python",
+        "style": "python"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "Git",
+      "language": {
+        "name": "Git",
+        "style": "git"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "Ubuntu",
+      "language": {
+        "name": "Server",
+        "style": "linux"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+   
+    {
+      "name": "SQL (MYSQL, MSSQL)",
+      "language": {
+        "name": "Others",
+        "style": "others"
+      },
+      "category": {
+        "name": "Languages"
+      }
+    },
+    
+    {
+      "name": "GitHub",
+      "language": {
+        "name": "Others",
+        "style": "others"
+      },
+      "category": {
+        "name": "Languages"
+      }
+    },
+    {
+      "name": "Gitlab",
+      "language": {
+        "name": "Others",
+        "style": "others"
+      },
+      "category": {
+        "name": "Languages"
+      }
+    },
+    {
+      "name": "Sourcetree",
+      "language": {
+        "name": "Others",
+        "style": "others"
+      },
+      "category": {
+        "name": "Languages"
+      }
+    },
+    {
+      "name": "JQUERY",
+      "language": {
+        "name": "Javascript",
+        "style": "javascript"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "Wordpress",
+      "language": {
+        "name": "PHP",
+        "style": "php"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    }
+    
+  ],
+  "tools": "Operating system: Linux(over ten years)<br />IDE: PhpStorm / RubyMine<br />Containerization: Docker<br />Continuous integration software: Jenkins / Gitlab-CI / Travis<br />Project Management Software: Jira / Gitlab<br />Version control system software: Gitlab / Github<br />",
+  "educations": [
+    {
+      "schoolName": "Suranaree University Of Technology",
+      "fieldOfStudy": "",
+      "startDate": "2013",
+      "endDate": "2017",
+      "degree": "Bachelor of Computer Engineering",
+      "activities": "Database, PHP, Flash, Java, English, Communication, Javascript"
+    }
+    
+  ],
+  "projects": [
+    
+    {
+      "title": "Resume",
+      "subtitle": "React Project",
+      "category": "project",
+      "subcategory": "react",
+      "links": [
+        {
+          "url": "https://github.com/wuttinanDEV/react-utility",
+          "text": "Visit website"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Javascript"
+        }
+      ],
+      "content": "Create resume web application by ReactJS",
+      "date": "2018-02-04"
+    },
+    {
+      "title": "Angular4 Authen with social media",
+      "subtitle": "Angular4 Project",
+      "category": "project",
+      "subcategory": "angular",
+      "links": [
+        {
+          "url": "https://github.com/wuttinanDEV/react-utility",
+          "text": "Visit website"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Angular4"
+        },
+        {
+          "name": "Firebase"
+        }
+      ],
+      "content": "Login to application with social media",
+      "date": "2017-09-20"
+    },
+    {
+      "title": "Line bot",
+      "subtitle": "PHP Project",
+      "category": "project",
+      "subcategory": "php",
+      "links": [
+        {
+          "url": "https://github.com/wuttinanDEV/bot-line-php",
+          "text": "Visit website"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "php"
+        }
+      ],
+      "content": "Get about weather forecast by send message from Line application",
+      "date": "2016-11-18"
+    },
+    {
+      "title": "Other project",
+      "subtitle": "See on github",
+      "category": "project",
+      "subcategory": "git",
+      "links": [
+        {
+          "url": "https://github.com/wuttinanDEV/",
+          "text": "Visit website"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "git"
+        }
+      ],
+      "content": "To see other project please visit my github",
+      "date": "today"
+    }
+  ],
+  "volunteer": [
+    {
+      "name": ""
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Game",
+      "icon": "gamepad"
+    },
+    {
+      "name": "Movie",
+      "icon": "film"
+    },
+    {
+      "name": "Music",
+      "icon": "headphones"
+    },
+    {
+      "name": "Learning",
+      "icon": "graduation-cap"
+    }
+  ]
+}

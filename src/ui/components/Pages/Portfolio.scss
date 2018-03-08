@@ -1,0 +1,43 @@
+$color_content: rgb(0, 0, 0);
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    color: #FE2E64;
+}
+.sub_title {
+    text-align: center;
+    font-size: 15px;
+    color: #FE2E64;
+}
+.content {
+    color: $color_content;
+    &__aboutMe {
+        color: $color_content;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+}
+.container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.container_workEdu {
+    background: rgb(209, 209, 209);
+    
+}
+.container_aboutMe {
+    background: rgb(255, 255, 255);
+    
+}
+
+.img {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+

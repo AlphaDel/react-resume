@@ -10,7 +10,7 @@ export default class Page extends Component {
                 <th>{id}</th>
                 <td>{title}</td>
                 <td>
-                <Link to={{ pathname: `/pages/${id}` }}>Show</Link>
+                <Link to={{ pathname: `/page/${id}` }}>Show</Link>
                 </td>
             </tr>
         )
