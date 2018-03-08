@@ -11,7 +11,6 @@ class Portfolio extends Component {
 
     getSkillsByLanguages() {
         const { skills } = this.props
-        console.log("const : skill : ". skills);
         const skillsByLanguages = skills.reduce(function (obj, item) {
             if (item.language) {
                 obj[item.language.name] = obj[item.language.name] || [];
