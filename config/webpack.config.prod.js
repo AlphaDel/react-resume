@@ -56,7 +56,7 @@ module.exports = {
   // You can exclude the *.map files from the build during deployment.
   devtool: shouldUseSourceMap ? 'source-map' : false,
   // In production, we only want to load the polyfills and the app code.
-  entry: [require.resolve('./polyfills'), paths.appIndexJs,paths.appBootstrap,paths.appGlobalCSS],
+  entry: [require.resolve('./polyfills'), paths.appIndexJs,paths.appGlobalCSS],
   output: {
     // The build folder.
     path: paths.appBuild,
@@ -127,6 +127,7 @@ module.exports = {
           },
         ],
         include: paths.appSrc,
+        exclude: /node_modules/
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -144,6 +145,12 @@ module.exports = {
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
+          {
+            test: [/\.svg$/,/\.txt$/],
+            loader: require.resolve('raw-loader'),
+            
+          },
+
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
@@ -164,17 +171,8 @@ module.exports = {
           {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
-              fallback: 'style-loader',
-              use: [
-                {
-                  loader: 'css-loader',
-                  options: {
-                    modules: true,
-                    localIdentName: '[name]__[local]__[hash:base64:5]'
-                  }
-                },
-              'postcss-loader'
-              ]
+              fallback: "style-loader",
+              use: "css-loader"
             })
           },
 
@@ -197,17 +195,7 @@ module.exports = {
             })
           },
 
-          {
-            test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-            use: [{
-              loader: require.resolve('file-loader'),
-              options: {
-                name: '[name].[ext]',
-                outputPath: 'fonts/',    // where the fonts will go
-                publicPath: '../'       // override the default path
-              }
-            }]
-          },
+          
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
           // In production, they would get copied to the `build` folder.
@@ -226,6 +214,8 @@ module.exports = {
           },
         ],
       },
+      // ** STOP ** Are you adding a new loader?
+      // Make sure to add the new loader(s) before the "file" loader.
     ],
   },
   plugins: [

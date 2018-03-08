@@ -1,21 +1,5 @@
 import React from 'react';
 
-import MoreHorizIcon from 'material-ui-icons/MoreHoriz';
-import LaravelIcon from 'react-devicon/laravel/plain'
-import PhpIcon from 'react-devicon/php/plain'
-import ReactIcon from 'react-devicon/react/original'
-import RubyIcon from 'react-devicon/ruby/plain';
-import RailsIcon from 'react-devicon/rails/plain';
-import JavascriptIcon from 'react-devicon/javascript/plain';
-import DockerIcon from 'react-devicon/docker/plain';
-import WordpressIcon from 'react-devicon/wordpress/plain';
-import IconLinux from 'react-devicon/linux/original' 
-import IconPython from 'react-devicon/python/original'
-import IconHtml5 from 'react-devicon/html5/original'
-import IconBootstrap from 'react-devicon/bootstrap/plain'
-import IconGit from 'react-devicon/git/original'
-import IconAngularjs from 'react-devicon/angularjs/original'
-
 const theme = {
   laravelColor: {
     style: {
@@ -23,7 +7,7 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--laravel',
-    icon: <LaravelIcon />,
+    icon: <i className="fab fa-github-square fa-9x"></i>,
     iconTag: <i className="fab fa-github-square fa-lg"></i>
   },
   phpColor: {
@@ -32,7 +16,7 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--php',
-    icon: <PhpIcon />,
+    icon: <i className="fab fa-php fa-9x"></i>,
     iconTag: <i className="fab fa-php fa-lg"></i>
   },
   reactColor: {
@@ -41,7 +25,7 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--react',
-    icon: <ReactIcon />,
+    icon: <i className="fab fa-react fa-9x"></i>,
     iconTag: <i className="fab fa-react fa-lg"></i>
   },
   javascriptColor: {
@@ -50,7 +34,7 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--javascript',
-    icon: <JavascriptIcon />,
+    icon: <i className="fab fa-js-square fa-9x"></i>,
     iconTag: <i className="fab fa-js-square fa-lg"></i>
   },
   dockerColor: {
@@ -59,7 +43,7 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--docker',
-    icon: <DockerIcon />,
+    icon: <i className="fab fa-docker fa-9x"></i>,
     iconTag: <i className="fab fa-docker fa-lg"></i>
   },
   wordpressColor: {
@@ -68,7 +52,7 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--wordpress',
-    icon: <WordpressIcon />,
+    icon: <i className="fab fa-wordpress fa-9x"></i>,
     iconTag: <i className="fab fa-wordpress fa-lg"></i>
   },
   linuxColor: {
@@ -76,8 +60,8 @@ const theme = {
       background: '#21759b',
       color: '#fff'
     },
-    icon: <IconLinux />,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: <i className="fab fa-linux fa-9x"></i>,
+    iconTag: <i className="fab fa-linux fa-lg"></i>
   },
   pythonColor: {
     style: {
@@ -85,8 +69,8 @@ const theme = {
       color: '#fff'
     },
     className: 'vertical-timeline-element--python',
-    icon: <IconPython/>,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: <i className="fab fa-python fa-9x"></i>,
+    iconTag: <i className="fab fa-python fa-lg"></i>
   },
   htmlColor: {
     style: {
@@ -94,8 +78,8 @@ const theme = {
       color: '#fff'
     },
     className: 'vertical-timeline-element--html',
-    icon: <IconHtml5/>,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: <i className="fab fa-html5 fa-9x"></i>,
+    iconTag: <i className="fab fa-html5 fa-lg"></i>
   },
   bootstrapColor: {
     style: {
@@ -103,8 +87,8 @@ const theme = {
       color: '#fff'
     },
     className: 'vertical-timeline-element--bootstrap',
-    icon: <IconBootstrap/>,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: <i className="fab fa-css3 fa-9x"></i>,
+    iconTag: <i className="fab fa-css3 fa-lg"></i>
   },
   gitColor: {
     style: {
@@ -112,7 +96,7 @@ const theme = {
       color: '#fff'
     },
     className: 'vertical-timeline-element--git',
-    icon: <IconGit/>,
+    icon: <i className="fab fa-github-square fa-9x"></i>,
     iconTag: <i className="fab fa-github-square fa-lg"></i>
   },
   angularColor: {
@@ -121,7 +105,7 @@ const theme = {
       color: '#fff'
     },
     className: 'vertical-timeline-element--angular',
-    icon: <IconAngularjs/>,
+    icon: <i className="fab fa-angular fa-9x"></i>,
     iconTag: <i className="fab fa-angular fa-lg"></i>
   },
   
@@ -131,8 +115,8 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--others',
-    icon: <MoreHorizIcon />,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: <i className="fas fa-ellipsis-h fa-9x"></i>,
+    iconTag: <i className="fab fa-ellipsis-h fa-lg"></i>
   }
 };
 
