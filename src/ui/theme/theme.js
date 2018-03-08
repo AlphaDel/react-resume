@@ -117,7 +117,7 @@ const theme = {
   },
   angularColor: {
     style: {
-      background: '#ff4000',
+      background: '#ff0000',
       color: '#fff'
     },
     className: 'vertical-timeline-element--angular',
