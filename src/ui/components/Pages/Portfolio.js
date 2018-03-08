@@ -29,11 +29,12 @@ class Portfolio extends Component {
         const skills = this.getSkillsByLanguages();
         const formatDate = 'ddMMyy'
         const styles = {background: "#2196f3", color: "#fff"}
+        let fullName = `${this.props.firstName} ${this.props.lastName}`;
         return (
             <div className="Resume">
                 <AboutMe 
                     style={appTheme.phpColor.style}
-                    fullName={this.props.fullName}
+                    fullName={fullName}
                     headline={this.props.headline}
                     summary={this.props.summary}
                     pictureUrl={this.props.pictureUrl}

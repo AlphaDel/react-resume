@@ -5,7 +5,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import Card, { CardContent } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
 import ScreenBlock from '../ScreenBlock/ScreenBlock'
-import IconLinux from 'react-devicon/linux/original' 
 import appTheme from '../../../theme/theme';
 import './SkillsBlock.css';
 

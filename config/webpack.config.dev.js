@@ -145,12 +145,7 @@ module.exports = {
             },
           },
           {
-            test: [/\.svg$/],
-            loader: require.resolve('svg-inline-loader'),
-            
-          },
-          {
-            test: [/\.txt$/],
+            test: [/\.svg$/,/\.txt$/],
             loader: require.resolve('raw-loader'),
             
           },
@@ -199,17 +194,7 @@ module.exports = {
             })
           },
 
-          {
-            test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-            use: [{
-              loader: require.resolve('file-loader'),
-              options: {
-                name: '[name].[ext]',
-                outputPath: 'assets/',    // where the fonts will go
-                publicPath: '../'       // override the default path
-              }
-            }]
-          },
+          
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
           // In production, they would get copied to the `build` folder.

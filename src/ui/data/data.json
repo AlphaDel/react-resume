@@ -8,8 +8,8 @@
   "lastName": "Chaoyos",
   "emailAddress": "wuttinan.wch@gmail.com",
   "headline": "Web Developer",
-  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, Mysql, MSSQL. My favourite stack : Angular, React, Docker",
-  "pictureUrl": "https://lh3.googleusercontent.com/PrmPRDZrazDoKSPsqliUfent7nHA31oWfkNyo8LOxBu_A4mBO5SCOWdygTLgGxsGjSGyESiAepiWvABTGXpac07waeCNlzAKmt3fXIdUaGmvKf29Tv45fno9aoPKk3j7dc5Fb2gCE3eDjHgUdZ7lPLOe-a_awEhbOtWPQje89C-V1W5wpCTMN3lPq3S3H1jPZjLUH7c49mix_WJDVjTGlH5jojo4vtB8pX-LCOxLaIxpfvexbMspYcLqjR8BuE4bSmLwG2WGcoPuqsrKiczr6-40s4G810_l0uF_rJPz6olKmXFVujkOKZZfHSLSKB3_VBZQM2ZGiMzRVRjCkYxP0iZvw76dVMTrwIype2NnZ8MH3GfXSvoSkZYBjp96qJWtmpMTqfjJa-eziAlsL96Mb-j7lnmE7dZGAmdVxhgb8RTE69g_Wz6cS4g2-BGX-dqQ8JaS8uDNy_y5upMHBi-ZYmFinm7GhTlEOHsXUilM6tdXhRe-DfvsPgJKzE9lvE4SRcwVOP7gXt9cYWXHOZzE64TtG9G0xBAU4NQx9T3PXt2TNyAbNpMjKsJkSG4wDATN-O0dUQorNy_eKd0fRYANDGdA-zfGoOkUZWmNKdeHmX5pITHu0NXkO5N20zgVEKWFlX0Fom5OxtjgzBRcIrTIDpsUG24kl2sC=s339-no",
+  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, Mysql, MSSQL. <br/>My favourite stack : Angular, React, Docker",
+  "pictureUrl": "https://www.w3schools.com/howto/img_avatar.png",
   "dateOfBirth": "1994-10-17",
   "mainAddress": "Bangkok Thailand",
   "websites": [
@@ -83,25 +83,16 @@
   "interests": "",
   "languages": [
     {
-      "name": "French",
+      "name": "Thai",
       "level": "Native",
       "levelNumber": 10
     },
     {
       "name": "English",
-      "level": "Professional working proficiency",
-      "levelNumber": 6
-    },
-    {
-      "name": "Japanese",
-      "level": "Professional working proficiency",
-      "levelNumber": 6
-    },
-    {
-      "name": "Korean",
-      "level": "Elementary proficiency",
-      "levelNumber": 2
+      "level": "",
+      "levelNumber": 5
     }
+   
   ],
   "skills": [
     {
@@ -159,7 +150,7 @@
     {
       "name": "Bootstrap 3",
       "language": {
-        "name": "Bootstrap",
+        "name": "CSS",
         "style": "bootstrap"
       },
       "category": {
@@ -188,7 +179,17 @@
       }
     },
     {
-      "name": "Git",
+      "name": "Github",
+      "language": {
+        "name": "Git",
+        "style": "git"
+      },
+      "category": {
+        "name": "Frameworks / SDK / CMS"
+      }
+    },
+    {
+      "name": "Gitlab",
       "language": {
         "name": "Git",
         "style": "git"
@@ -219,26 +220,6 @@
       }
     },
     
-    {
-      "name": "GitHub",
-      "language": {
-        "name": "Others",
-        "style": "others"
-      },
-      "category": {
-        "name": "Languages"
-      }
-    },
-    {
-      "name": "Gitlab",
-      "language": {
-        "name": "Others",
-        "style": "others"
-      },
-      "category": {
-        "name": "Languages"
-      }
-    },
     {
       "name": "Sourcetree",
       "language": {
@@ -271,7 +252,7 @@
     }
     
   ],
-  "tools": "Operating system: Linux(over ten years)<br />IDE: PhpStorm / RubyMine<br />Containerization: Docker<br />Continuous integration software: Jenkins / Gitlab-CI / Travis<br />Project Management Software: Jira / Gitlab<br />Version control system software: Gitlab / Github<br />",
+  "tools": "",
   "educations": [
     {
       "schoolName": "Suranaree University Of Technology",

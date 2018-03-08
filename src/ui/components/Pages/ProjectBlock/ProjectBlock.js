@@ -10,7 +10,6 @@ import ScreenBlock from '../ScreenBlock/ScreenBlock'
 
 import appTheme from '../../../theme/theme';
 import './ProjectBlock.css';
-import IconGit from 'react-devicon/git/original'
 
 const ProjectBlock = ({ projects }) => (
 

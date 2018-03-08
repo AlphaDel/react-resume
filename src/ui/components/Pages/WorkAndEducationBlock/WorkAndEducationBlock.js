@@ -5,11 +5,9 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import ScreenBlock from '../ScreenBlock/ScreenBlock'
 import './WorkAndEducationBlock.css';
-import IconGit from 'react-devicon/git/original'
 const WorkAndEducationBlock = ({ style, positions, educations }) => (
 
 <ScreenBlock id="Resume-work" style={{background: "#e5e5e5"}} className="ResumeWorkAndEducationBlock">
-{console.log("style : " , style)}
   <div className="container">
     <div className="heading">
       <h2>Work experience & Education</h2>
