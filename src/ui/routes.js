@@ -7,11 +7,8 @@ export default () => {
     return (
         <BrowserRouter>
             <div>
-                <Route exact path='/' component={ App }/>
-{/*                     
-                <Route exact path='/pages' component={ Pages } />
-                <Route exact path='/page/:id' component={ ShowPage } /> */}
-                <Route path='/portfolio' component={ Portfolio } />
+                <Route exact path='/' component={ App } />
+                <Route exact path='/' component={ Portfolio } />
             </div>
         </BrowserRouter>
     )
