@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Card, { CardContent } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
@@ -8,19 +7,19 @@ import ScreenBlock from '../ScreenBlock/ScreenBlock'
 import appTheme from '../../../theme/theme';
 import './SkillsBlock.css';
 
-const SkillsBlock = ({ skills, tools }) => (
+const SkillsBlock = ({ style, skills, tools }) => (
   
 
-<ScreenBlock id="Resume-skills" className="ResumeSkillsBlock">
+<ScreenBlock id="Resume-skills" style={style} className="ResumeSkillsBlock">
   <div className="container">
-    <div className="heading">
+    <div className="heading ResumeSkillsBlock-skills-heading">
       <h2>My Skill</h2>  
     </div>
 
     <div className="ResumeSkillsBlock-skills">
       {skills.map((skillCategory, i) =>
             
-            <Card key={i}>
+            <Card key={i} className="ResumeSkillsBlock-card">
               <CardContent>
                 <Avatar style={{
                   ...appTheme[`${skillCategory[0].language.style}Color`].style,

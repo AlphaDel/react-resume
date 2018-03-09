@@ -5,6 +5,14 @@
     justify-content: space-between;
 }
 
+.ResumeSkillsBlock-skills-heading h2{
+
+    color: #fdfdfd;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
 .ResumeSkillsBlock-skills > div {
     width: 23%;
     text-align: center;
@@ -29,6 +37,37 @@
     margin-top: 0;
     padding-top: 0;
 }
+.ResumeSkillsBlock-card {
+    border-radius: 10px !important;
+}
+.ResumeSkillsBlock-card:hover {
+    animation: bounceOut .4s linear;
+}
+
+@keyframes bounceOut {
+    0% {
+      box-shadow: 0 0 0 1px #18d8a9;
+      opacity: 1;
+    }
+    25% {
+      box-shadow: 0 0 0 1px #18d8a9;
+      opacity: 1;
+    }
+    50% {
+      box-shadow: 0 0 0 7px #18d8a9;
+      opacity: 1;
+    }
+    75% {
+      box-shadow: 0 0 0 4px #18d8a9;
+      opacity: 1;
+    }
+    100% {
+      box-shadow: 0 0 0 1px #18d8a9;
+      opacity: 1;
+    }
+  }
+  
+
 
 @media only screen and (max-width: 800px) {
     .ResumeSkillsBlock-skills {

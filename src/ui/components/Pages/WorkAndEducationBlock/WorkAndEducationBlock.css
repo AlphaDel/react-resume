@@ -6,3 +6,13 @@
 .ResumeWorkAndEducationBlock #Resume-education {
     padding-bottom: 69px;
 }
+.vertical-timeline-element-title {
+    font-size: 22px ;
+    font-weight: bold;
+}
+.vertical-timeline-element-subtitle {
+    font-size: 17px ;
+}
+.vertical-timeline-element-detail {
+    font-size: 15px ;
+}

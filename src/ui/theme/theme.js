@@ -1,6 +1,24 @@
 import React from 'react';
 
 const theme = {
+  aboutMeColor: {
+    style: {
+      background: '#28549c',
+      color: '#fff',
+    },
+    className: 'vertical-timeline-element--laravel',
+    icon: <i className="fab fa-github-square fa-9x"></i>,
+    iconTag: <i className="fab fa-github-square fa-lg"></i>
+  },
+  skillColor: {
+    style: {
+      background: '#28549c',
+      color: '#000',
+    },
+    className: 'vertical-timeline-element--laravel',
+    icon: <i className="fab fa-github-square fa-9x"></i>,
+    iconTag: <i className="fab fa-github-square fa-lg"></i>
+  },
   laravelColor: {
     style: {
       background: '#fd4f31',
@@ -30,7 +48,7 @@ const theme = {
   },
   javascriptColor: {
     style: {
-      background: '#F0DB4F',
+      background: '#f5d819',
       color: '#fff',
     },
     className: 'vertical-timeline-element--javascript',
