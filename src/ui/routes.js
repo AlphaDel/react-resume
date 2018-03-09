@@ -6,12 +6,12 @@ import { Pages, ShowPage, Portfolio } from './containers'
 export default () => {
     return (
         <HashRouter>
-            <Switch>
+            <BrowserRouter>
                 <div>
                     <Route exact path='/' component={ App } />
-                    <Route exact path='/' component={ Portfolio } />
+                    <Route path='/' component={ Portfolio } />
                 </div>
-            </Switch>
+            </BrowserRouter> 
         </HashRouter>
     )
 }

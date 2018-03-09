@@ -7,7 +7,7 @@
 
 .ResumeSkillsBlock-skills-heading h2{
 
-    color: #fdfdfd;
+    color: #000;
     font-size: 34px;
     font-weight: bold;
 }
@@ -41,10 +41,10 @@
     border-radius: 10px !important;
 }
 .ResumeSkillsBlock-card:hover {
-    animation: bounceOut .4s linear;
+    animation: bounceOutKey .4s linear;
 }
 
-@keyframes bounceOut {
+@keyframes bounceOutKey {
     0% {
       box-shadow: 0 0 0 1px #18d8a9;
       opacity: 1;

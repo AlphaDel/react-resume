@@ -16,3 +16,12 @@
 .vertical-timeline-element-detail {
     font-size: 15px ;
 }
+.ResumeSkillsBlock-skills-heading h2{
+
+    color: #000;
+    font-size: 34px;
+    font-weight: bold;
+}
+.ResumeSkillsBlock-skills-vertical-timeline::before {
+    background: #00000094;
+}
