@@ -1,17 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ScreenBlock from '../ScreenBlock/ScreenBlock'
-import Button from 'material-ui/Button';
 import './AboutMeBlock.css';
 
-import appTheme from '../../../theme/theme'
 
 import { AgeFromDateString } from 'age-calculator'
-
-const calculateAge = (birthday) => { // birthday is a date
-    var ageDifMs = Date.now() - birthday.getTime();
-    var ageDate = new Date(ageDifMs); // miliseconds from epoch
-    return Math.abs(ageDate.getUTCFullYear() - 1970);
-}
 
 const AboutMeBlock = ({ style, fullName, headline, summary, pictureUrl, dateOfBirth, emailAddress }) => (
     <ScreenBlock id="Resume-aboutMe" style={style} className="ResumeAboutMeBlock">

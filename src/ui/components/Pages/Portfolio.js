@@ -26,13 +26,12 @@ class Portfolio extends Component {
     
     render () {
         const skills = this.getSkillsByLanguages();
-        const formatDate = 'ddMMyy'
         const styles = {background: "#2196f3", color: "#fff"}
         let fullName = `${this.props.firstName} ${this.props.lastName}`;
         return (
             <div className="Resume">
                 <AboutMe 
-                    style={appTheme.phpColor.style}
+                    style={appTheme.aboutMeColor.style}
                     fullName={fullName}
                     headline={this.props.headline}
                     summary={this.props.summary}
@@ -46,6 +45,7 @@ class Portfolio extends Component {
                     educations={this.props.educations}
                 />
                 <SkillsBlock
+                    style={appTheme.skillColor.style}
                     skills={skills}
                     tools={this.props.tools}
                 />
@@ -67,7 +67,7 @@ Portfolio.defaultProps = {
   lastName: 'Chaoyos',
   emailAddress: 'wuttinan.wch@gmail.com',
   headline: 'Web Developer',
-  summary: 'Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, Mysql, MSSQL. My favourite stack : Angular, React, Docker',
+  summary: 'Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as "Programmer". Skilled in AngularJS, React, PHP, Mysql, MSSQL. My favourite stack : Angular, React, Docker',
   pictureUrl: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAYqAAAAJGQ0YjYxNDI0LTEwOTMtNGVkNC1hNDIxLWYyNzNkMTYzNDMzNg.jpg',
   dateOfBirth: '1994-10-17',
   mainAddress: 'Bangkok Thailand',

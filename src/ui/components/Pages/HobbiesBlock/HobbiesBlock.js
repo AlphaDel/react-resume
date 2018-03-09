@@ -1,9 +1,6 @@
 import React from 'react';
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
-import Icon from 'material-ui/Icon';
 import Card, { CardContent } from 'material-ui/Card';
 
 import ScreenBlock from '../ScreenBlock/ScreenBlock'

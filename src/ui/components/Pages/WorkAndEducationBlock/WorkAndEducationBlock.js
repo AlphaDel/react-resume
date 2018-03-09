@@ -7,7 +7,7 @@ import ScreenBlock from '../ScreenBlock/ScreenBlock'
 import './WorkAndEducationBlock.css';
 const WorkAndEducationBlock = ({ style, positions, educations }) => (
 
-<ScreenBlock id="Resume-work" style={{background: "#e5e5e5"}} className="ResumeWorkAndEducationBlock">
+<ScreenBlock id="Resume-work" style={{background: "#e6ab5278"}} className="ResumeWorkAndEducationBlock">
   <div className="container">
     <div className="heading">
       <h2>Work experience & Education</h2>
@@ -26,7 +26,7 @@ const WorkAndEducationBlock = ({ style, positions, educations }) => (
           <h3 className="vertical-timeline-element-title">{position.company}</h3>
           <h4 className="vertical-timeline-element-subtitle">{position.title}</h4>
           <p>
-            <span dangerouslySetInnerHTML={{ __html: position.summary }}></span>
+            <span className="vertical-timeline-element-detail" dangerouslySetInnerHTML={{ __html: position.summary }}></span>
           </p>
         </VerticalTimelineElement>
     )}
@@ -38,7 +38,7 @@ const WorkAndEducationBlock = ({ style, positions, educations }) => (
           className="vertical-timeline-element--education"
           key={i}
           date={education.startDate + ' – ' + education.endDate + ' (' + ((education.endDate === 'Today' ? (new Date()).getFullYear() : parseInt(education.endDate, 10)) - parseInt(education.startDate, 10))  + ' years)'}
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+          iconStyle={{ background: 'rgb(255, 118, 0)', color: '#fff' }}
           icon={<i className="fas fa-graduation-cap fa-lg"></i>}
           >
           <h3 className="vertical-timeline-element-title">{education.schoolName}</h3>
