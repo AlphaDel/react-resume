@@ -36,13 +36,6 @@ export default class Header extends Component {
 
           <ul className={styles['menu']}>
             <li className={styles['menu__item']}>
-            <Link
-            to={{ pathname: '/portfolio' }}
-            className={styles['brand__link']}>
-            Porfolio
-          </Link>
-            </li>
-            <li className={styles['menu__item']}>
               {linkGithub}
             </li>
             <li className={styles['menu__item']}>

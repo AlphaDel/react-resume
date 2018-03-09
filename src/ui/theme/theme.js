@@ -7,17 +7,35 @@ const theme = {
       color: '#fff',
     },
     className: 'vertical-timeline-element--laravel',
-    icon: <i className="fab fa-github-square fa-9x"></i>,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: '',
+    iconTag: ''
   },
-  skillColor: {
+  workEduColor: {
     style: {
-      background: '#28549c',
+      background: '#e6ecf3',
       color: '#000',
     },
     className: 'vertical-timeline-element--laravel',
-    icon: <i className="fab fa-github-square fa-9x"></i>,
-    iconTag: <i className="fab fa-github-square fa-lg"></i>
+    icon: '',
+    iconTag: ''
+  },
+  skillColor: {
+    style: {
+      background: '#fff',
+      color: '#000',
+    },
+    className: 'vertical-timeline-element--laravel',
+    icon: '',
+    iconTag: ''
+  },
+  projectColor: {
+    style: {
+      background: '#e6ecf3',
+      color: '#000',
+    },
+    className: 'vertical-timeline-element--laravel',
+    icon: '',
+    iconTag: ''
   },
   laravelColor: {
     style: {

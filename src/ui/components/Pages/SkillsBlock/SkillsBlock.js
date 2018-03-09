@@ -1,21 +1,24 @@
 import React from 'react';
 
-import 'react-vertical-timeline-component/style.min.css';
-import Card, { CardContent } from 'material-ui/Card';
-import Avatar from 'material-ui/Avatar';
+import 'react-vertical-timeline-component/style.min.css'
+import Card, { CardContent } from 'material-ui/Card'
+import Avatar from 'material-ui/Avatar'
+import ScrollAnimation from 'react-animate-on-scroll'
 import ScreenBlock from '../ScreenBlock/ScreenBlock'
-import appTheme from '../../../theme/theme';
-import './SkillsBlock.css';
+import appTheme from '../../../theme/theme'
+
+import './SkillsBlock.css'
+import "animate.css/animate.min.css"
 
 const SkillsBlock = ({ style, skills, tools }) => (
   
-
+<ScrollAnimation animateIn="fadeIn">
 <ScreenBlock id="Resume-skills" style={style} className="ResumeSkillsBlock">
   <div className="container">
     <div className="heading ResumeSkillsBlock-skills-heading">
       <h2>My Skill</h2>  
     </div>
-
+    
     <div className="ResumeSkillsBlock-skills">
       {skills.map((skillCategory, i) =>
             
@@ -39,13 +42,14 @@ const SkillsBlock = ({ style, skills, tools }) => (
                 )}
               </CardContent>
             </Card>
+            
           )}
     </div>
 
   </div>
 
 </ScreenBlock>
-
+</ScrollAnimation>
 
     
 

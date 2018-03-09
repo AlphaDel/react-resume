@@ -1,6 +1,12 @@
 .ResumeHobbiesBlock .container {
     text-align: center;
 }
+.ResumeHobbiesBlock-heading h2{
+
+    color: #000;
+    font-size: 34px;
+    font-weight: bold;
+}
 
 .ResumeHobbiesBlock-languages {
     display: inline-flex;

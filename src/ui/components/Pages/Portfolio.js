@@ -40,7 +40,7 @@ class Portfolio extends Component {
                     emailAddress={this.props.emailAddress}
                 />
                 <WorkAndEducationBlock 
-                    style={appTheme.phpColor.style}
+                    style={appTheme.workEduColor.style}
                     positions={this.props.positions}
                     educations={this.props.educations}
                 />
@@ -50,6 +50,7 @@ class Portfolio extends Component {
                     tools={this.props.tools}
                 />
                 <ProjectBlock 
+                    style={appTheme.projectColor.style}
                     projects={this.props.projects}
                 />
                 <Hobbies

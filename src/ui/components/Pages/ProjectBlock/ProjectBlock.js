@@ -1,27 +1,27 @@
-import React from 'react';
+import React from 'react'
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
-import Chip from 'material-ui/Chip';
-import Button from 'material-ui/Button';
+import Chip from 'material-ui/Chip'
+import Button from 'material-ui/Button'
 
 import ScreenBlock from '../ScreenBlock/ScreenBlock'
 
-import appTheme from '../../../theme/theme';
-import './ProjectBlock.css';
+import appTheme from '../../../theme/theme'
+import './ProjectBlock.css'
 
-const ProjectBlock = ({ projects }) => (
+const ProjectBlock = ({ style, projects }) => (
 
-<ScreenBlock id="Resume-projects" className="ResumeProjectsBlock">
+<ScreenBlock id="Resume-projects" style={style} className="ResumeProjectsBlock">
     <div className="container">
-      <div className="heading">
+      <div className="heading ResumeProjectsBlock-technologies-heading">
         <h2>
             My Projects
         </h2>
       </div>
 
-      <VerticalTimeline>
+      <VerticalTimeline className="ResumeProjectsBlock-vertical-timeline">
         {projects.map((project, i) =>
           <VerticalTimelineElement
             style={{ borderTop: '3px solid ' + appTheme[project.subcategory + 'Color'].border }}
@@ -47,7 +47,8 @@ const ProjectBlock = ({ projects }) => (
             <br />
             <div className="ResumeProjectsBlock-links">
               {project.links.map((link, i) =>
-                <Button key={i} raised color="default" target="_blank" href={link.url}>{link.text}</Button>
+                <a key={i} className="btn btn-medium btn-green btn-radius" href={link.url}>{link.text}</a>
+                // <Button key={i} raised color="default" target="_blank" href={link.url}>{link.text}</Button>
               )}
             </div>
           </VerticalTimelineElement>
