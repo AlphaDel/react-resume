@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import WorkAndEducationBlock from './WorkAndEducationBlock/WorkAndEducationBlock'
+
+import HomeBlock from './HomeBlock/HomeBlock'
 import AboutMe from './AboutMeBlock/AboutMeBlock'
+import WorkAndEducationBlock from './WorkAndEducationBlock/WorkAndEducationBlock'
 import SkillsBlock from './SkillsBlock/SkillsBlock'
 import ProjectBlock from './ProjectBlock/ProjectBlock'
 import Hobbies from './HobbiesBlock/HobbiesBlock'
@@ -30,6 +32,11 @@ class Portfolio extends Component {
         let fullName = `${this.props.firstName} ${this.props.lastName}`;
         return (
             <div className="Resume">
+                <HomeBlock 
+                    style={appTheme.aboutMeColor.style}
+                    fullName={fullName}
+                    headline={this.props.headline}
+                />
                 <AboutMe 
                     style={appTheme.aboutMeColor.style}
                     fullName={fullName}

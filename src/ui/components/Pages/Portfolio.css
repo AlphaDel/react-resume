@@ -7,9 +7,9 @@
     padding-bottom: 69px;
 }
 
-.Resume .ScreenBlockContainer:nth-child(odd) .ScreenBlock {
-    background: #fff;
-}
+/* .Resume .ScreenBlockContainer:nth-child(odd) .ScreenBlock {
+    
+} */
 
 @media only screen and (max-width: 800px) {
     .Resume .container {
