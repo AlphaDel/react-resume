@@ -8,8 +8,8 @@ export default () => {
         <HashRouter>
             <BrowserRouter>
                 <div>
-                    <Route exact path='/' component={ App } />
-                    <Route exact path='/' component={ Portfolio } />
+                    <Route path='/' component={ App } />
+                    <Route path='/' component={ Portfolio } />
                 </div>
             </BrowserRouter> 
         </HashRouter>
