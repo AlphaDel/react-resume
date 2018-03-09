@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styles from './Header.scss'
 import Typed from 'typed.js';
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
   
@@ -34,7 +35,13 @@ export default class Header extends Component {
           <span className={styles['typing-style']} ref={(el) => { this.el = el; }}/>
 
           <ul className={styles['menu']}>
-            
+            <li className={styles['menu__item']}>
+            <Link
+            to={{ pathname: '/portfolio' }}
+            className={styles['brand__link']}>
+            Porfolio
+          </Link>
+            </li>
             <li className={styles['menu__item']}>
               {linkGithub}
             </li>

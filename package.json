@@ -1,8 +1,8 @@
 {
-  "name": "react-utility",
+  "name": "react-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wuttinanDEV.github.io/react-resume",
+  "homepage": "http://wuttinanDEV.github.io/",
   "dependencies": {
     "age-calculator": "^1.0.0",
     "autoprefixer": "7.1.6",
