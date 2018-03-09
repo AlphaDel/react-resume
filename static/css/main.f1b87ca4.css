@@ -55,6 +55,11 @@
       color: #fff; }
     .Header__menu__link__1YLYb:focus {
       color: #18d8a9; }
+
+.Header__typing-style__jvkVK {
+  padding-left: 10px;
+  font-weight: bold;
+  color: #18d8a9; }
 .Home__title__1yqAR {
   position: fixed;
   top: 50%;
@@ -89,7 +94,16 @@
 .ResumeWorkAndEducationBlock #Resume-education {
     padding-bottom: 69px;
 }
-.ResumeAboutMeBlock .Resume-profilePicture img {
+.vertical-timeline-element-title {
+    font-size: 22px ;
+    font-weight: bold;
+}
+.vertical-timeline-element-subtitle {
+    font-size: 17px ;
+}
+.vertical-timeline-element-detail {
+    font-size: 15px ;
+}.ResumeAboutMeBlock .Resume-profilePicture img {
     border-radius: 50%;
     max-width: 90%;
     max-height: none;
@@ -184,6 +198,14 @@
     justify-content: space-between;
 }
 
+.ResumeSkillsBlock-skills-heading h2{
+
+    color: #fdfdfd;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+
 .ResumeSkillsBlock-skills > div {
     width: 23%;
     text-align: center;
@@ -208,6 +230,37 @@
     margin-top: 0;
     padding-top: 0;
 }
+.ResumeSkillsBlock-card {
+    border-radius: 10px !important;
+}
+.ResumeSkillsBlock-card:hover {
+    animation: bounceOut .4s linear;
+}
+
+@keyframes bounceOut {
+    0% {
+      box-shadow: 0 0 0 1px #18d8a9;
+      opacity: 1;
+    }
+    25% {
+      box-shadow: 0 0 0 1px #18d8a9;
+      opacity: 1;
+    }
+    50% {
+      box-shadow: 0 0 0 7px #18d8a9;
+      opacity: 1;
+    }
+    75% {
+      box-shadow: 0 0 0 4px #18d8a9;
+      opacity: 1;
+    }
+    100% {
+      box-shadow: 0 0 0 1px #18d8a9;
+      opacity: 1;
+    }
+  }
+  
+
 
 @media only screen and (max-width: 800px) {
     .ResumeSkillsBlock-skills {
@@ -506,4 +559,4 @@ ul {
     text-align: left;
     vertical-align: bottom; }
 
-/*# sourceMappingURL=main.4a4fbfdc.css.map*/
+/*# sourceMappingURL=main.f1b87ca4.css.map*/
