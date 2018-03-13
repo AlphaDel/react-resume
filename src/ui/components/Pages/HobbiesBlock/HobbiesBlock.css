@@ -1,3 +1,6 @@
+.ResumeHobbiesBlock {
+    min-height: calc(50vh - 56px) !important;
+}
 .ResumeHobbiesBlock .container {
     text-align: center;
 }

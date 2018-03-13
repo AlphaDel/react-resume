@@ -11,7 +11,7 @@ import "animate.css/animate.min.css"
 const HobbiesBlock = ({ hobbies, hobbyCardStyle, style }) => (
 
   <ScrollAnimation animateIn="fadeIn" delay={3}>
-    <ScreenBlock id="Resume-languages" style={style} className="ResumeHobbiesBlock">
+    <ScreenBlock id="Resume-hobbies" style={style} className="ResumeHobbiesBlock">
       <div className="container">
         <div className="heading ResumeHobbiesBlock-heading">
           <h2>

@@ -65,13 +65,7 @@ class Portfolio extends Component {
                     style={appTheme.hobbiesColor.style}
                     hobbies={this.props.hobbies}
                     hobbyCardStyle={styles}
-                />
-                <ContactBlock
-                    style={appTheme.contactColor.style}
-                    hobbies={this.props.hobbies}
-                    hobbyCardStyle={styles}
-                />
-                
+                />                
             </div>
         )
     }
