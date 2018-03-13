@@ -2,8 +2,6 @@
     border-radius: 50%;
     max-width: 90%;
     max-height: none;
-    width: 350px;
-    height: 300px;
     vertical-align: middle;
     box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.07);
 }
