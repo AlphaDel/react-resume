@@ -1,0 +1,91 @@
+.ResumeContactBlock .container {
+    text-align: center;
+}
+.ResumeContactBlock-heading h2{
+
+    color: #000;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.ResumeContactBlock-languages {
+    display: inline-flex;
+    flex-flow: column nowrap;
+}
+
+.ResumeContactBlock-languages:after {
+    clear: both;
+}
+
+.ResumeContactBlock-language {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.ResumeContactBlock-languageTitleAndLevel {
+    text-align: left;
+    padding-right: 25px;
+}
+
+.ResumeContactBlock-languageTitle {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ResumeContactBlock-languageLevel {
+    color: #8a8a8b;
+    width: 100%;
+    text-align: left;
+}
+
+.ResumeContactBlock-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.ResumeContactBlock-hobby {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.ResumeContactBlock-hobby h4 {
+    margin: 4px;
+}
+
+.ResumeContactBlock-hobby .material-icons {
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 800px) {
+    .ResumeContactBlock-hobbies {
+        padding: 20px;
+    }
+
+    .ResumeContactBlock-hobby {
+        width: 31%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ResumeContactBlock-hobbies {
+        padding: 20px;
+    }
+
+    .ResumeContactBlock-hobby {
+        width: 48%;
+        margin: 1%;
+    }
+}

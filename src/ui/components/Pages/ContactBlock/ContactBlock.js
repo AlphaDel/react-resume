@@ -5,22 +5,22 @@ import Card, { CardContent } from 'material-ui/Card'
 import ScrollAnimation from 'react-animate-on-scroll'
 import ScreenBlock from '../ScreenBlock/ScreenBlock'
 
-import './HobbiesBlock.css'
+import './ContactBlock.css'
 import "animate.css/animate.min.css"
 
 const HobbiesBlock = ({ hobbies, hobbyCardStyle, style }) => (
 
   <ScrollAnimation animateIn="fadeIn" delay={3}>
-    <ScreenBlock id="Resume-languages" style={style} className="ResumeHobbiesBlock">
+    <ScreenBlock id="Resume-languages" style={style} className="ResumeContactBlock">
       <div className="container">
-        <div className="heading ResumeHobbiesBlock-heading">
+        <div className="heading ResumeContactBlock-heading">
           <h2>
-            Hobbies
+            Contact
         </h2>
         </div>
-        <div className="ResumeHobbiesBlock-hobbies">
+        <div className="ResumeContactBlock-hobbies">
           {hobbies.map((hobby, i) =>
-            <Card key={i} style={hobbyCardStyle} className="ResumeHobbiesBlock-hobby">
+            <Card key={i} style={hobbyCardStyle} className="ResumeContactBlock-hobby">
               <CardContent>
 
                 <i className={`fas fa-${hobby.icon} fa-5x`}></i>

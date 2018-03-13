@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
 import HomeBlock from './HomeBlock/HomeBlock'
-import AboutMe from './AboutMeBlock/AboutMeBlock'
+import AboutMeBlock from './AboutMeBlock/AboutMeBlock'
 import WorkAndEducationBlock from './WorkAndEducationBlock/WorkAndEducationBlock'
 import SkillsBlock from './SkillsBlock/SkillsBlock'
 import ProjectBlock from './ProjectBlock/ProjectBlock'
-import Hobbies from './HobbiesBlock/HobbiesBlock'
+import Hobbiesblock from './HobbiesBlock/HobbiesBlock'
+import ContactBlock from './ContactBlock/ContactBlock'
 import appTheme from '../../theme/theme';
 import './Portfolio.css'
 
@@ -37,7 +38,7 @@ class Portfolio extends Component {
                     fullName={fullName}
                     headline={this.props.headline}
                 />
-                <AboutMe 
+                <AboutMeBlock 
                     style={appTheme.aboutMeColor.style}
                     fullName={fullName}
                     headline={this.props.headline}
@@ -60,7 +61,13 @@ class Portfolio extends Component {
                     style={appTheme.projectColor.style}
                     projects={this.props.projects}
                 />
-                <Hobbies
+                <Hobbiesblock
+                    style={appTheme.hobbiesColor.style}
+                    hobbies={this.props.hobbies}
+                    hobbyCardStyle={styles}
+                />
+                <ContactBlock
+                    style={appTheme.contactColor.style}
                     hobbies={this.props.hobbies}
                     hobbyCardStyle={styles}
                 />

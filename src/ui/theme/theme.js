@@ -6,7 +6,6 @@ const theme = {
       background: '#28549c',
       color: '#fff',
     },
-    className: 'vertical-timeline-element--laravel',
     icon: '',
     iconTag: ''
   },
@@ -15,7 +14,6 @@ const theme = {
       background: '#e6ecf3',
       color: '#000',
     },
-    className: 'vertical-timeline-element--laravel',
     icon: '',
     iconTag: ''
   },
@@ -24,7 +22,22 @@ const theme = {
       background: '#fff',
       color: '#000',
     },
-    className: 'vertical-timeline-element--laravel',
+    icon: '',
+    iconTag: ''
+  },
+  hobbiesColor: {
+    style: {
+      background: '#fff',
+      color: '#000',
+    },
+    icon: '',
+    iconTag: ''
+  },
+  contactColor: {
+    style: {
+      background: '#fff',
+      color: '#000',
+    },
     icon: '',
     iconTag: ''
   },
@@ -33,7 +46,6 @@ const theme = {
       background: '#e6ecf3',
       color: '#000',
     },
-    className: 'vertical-timeline-element--laravel',
     icon: '',
     iconTag: ''
   },
