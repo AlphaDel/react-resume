@@ -1,11 +1,9 @@
-body {
 
-}
 .ResumeHomeBlock {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    min-height: calc(100vh - 56px);
     color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;

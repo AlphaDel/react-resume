@@ -8,14 +8,18 @@
   "lastName": "Chaoyos",
   "emailAddress": "wuttinan.wch@gmail.com",
   "headline": "Web Developer",
-  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, Mysql, MSSQL. <br/>My favourite stack : Angular, React, Docker",
-  "pictureUrl": "https://www.w3schools.com/howto/img_avatar.png",
+  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, MYSQL, MSSQL. <br/>My favourite stack : Angular, React, Docker",
+  "pictureUrl": "https://lh3.googleusercontent.com/QUbbqlAqNPR9WrP_UoIT7DcHiQlHOq6HADF_pcsl4kitCMOjRLXw4HyCbYBRUAV9I3rkdQeYlxHhkdM-oOk1im4fqhSqkzo60iK4XGSZlxj_G2TkLq1BoQmmn41IQ_lcGdD2pTOnKQ=w712-h949-no",
   "dateOfBirth": "1994-10-17",
   "mainAddress": "Bangkok Thailand",
   "websites": [
     {
       "type": "Github",
       "url": "https://www.github.com/wuttinanDEV"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://fb.me/wuttinan.wch"
     }
   ],
   "phoneNumbers": [
@@ -31,34 +35,14 @@
   "imAccounts": [
     {
       "type": "Line",
-      "name": "shinbuntu"
-    },
-    {
-      "type": "Skype",
-      "name": "monnot.stephane"
-    }
-  ],
-  "snsAccounts": [
-    {
-      "name": "Linkedin",
-      "icon": "linkedin",
-      "url": "https://www.linkedin.com/in/monnotstephane/"
-    },
-    {
-      "name": "Github",
-      "icon": "github",
-      "url": "https://github.com/stephane-monnot"
+      "name": "tazakunk"
     }
   ],
   "locations": [
     {
-      "name": "Osaka",
-      "country": "Japan",
+      "name": "Samut Sakhon",
+      "country": "Thailand",
       "isCurrent": true
-    },
-    {
-      "name": "Lyon",
-      "country": "France"
     }
   ],
   "positions": [
@@ -80,7 +64,6 @@
     }
     
   ],
-  "interests": "",
   "languages": [
     {
       "name": "Thai",
@@ -347,11 +330,6 @@
       ],
       "content": "To see other project please visit my github",
       "date": "Present"
-    }
-  ],
-  "volunteer": [
-    {
-      "name": ""
     }
   ],
   "hobbies": [
