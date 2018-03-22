@@ -77,7 +77,7 @@ Portfolio.defaultProps = {
   emailAddress: 'wuttinan.wch@gmail.com',
   headline: 'Web Developer',
   summary: 'Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as "Programmer". Skilled in AngularJS, React, PHP, Mysql, MSSQL. My favourite stack : Angular, React, Docker',
-  pictureUrl: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAYqAAAAJGQ0YjYxNDI0LTEwOTMtNGVkNC1hNDIxLWYyNzNkMTYzNDMzNg.jpg',
+  pictureUrl: 'https://lh3.googleusercontent.com/eVI5vpJOWdNRuquUObj0VM0e3xd_YnG0SqT6_ylbIEeqRqXInpjoJuXq-US8x27K0yFj2SjkaMEP7VkDIyYOmICI2unRQDyNOFbQHNyfh2KVCRo-46_ST34t_3aWXE-k889ctUyjSA=s339-no',
   dateOfBirth: '1994-10-17',
   mainAddress: 'Bangkok Thailand',
   websites: [],
