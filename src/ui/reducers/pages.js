@@ -1,16 +1,11 @@
-import { 
-    LOAD_PAGES_SUCCESS,
-    LOAD_PAGE_SUCCESS
-} from '../constants/actionTypes'
+import { LOAD_PAGE_REQUEST } from '../constants/actionTypes'
 
 const initialState = []
 
 export default (state = initialState, action) => {
     
     switch(action.type) {
-        case LOAD_PAGES_SUCCESS:
-            return action.payload
-        case LOAD_PAGE_SUCCESS:
+        case LOAD_PAGE_REQUEST:
             return action.payload
         default:
             return state

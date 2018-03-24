@@ -11,15 +11,3 @@
     
 } */
 
-@media only screen and (max-width: 800px) {
-    .Resume .container {
-        padding-top: 45px;
-        padding-bottom: 45px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .Resume {
-        padding-bottom: 88px;
-    }
-}
