@@ -712,18 +712,6 @@ a.btn,.btn {
     
 } */
 
-@media only screen and (max-width: 800px) {
-    .Resume .container {
-        padding-top: 45px;
-        padding-bottom: 45px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .Resume {
-        padding-bottom: 88px;
-    }
-}
 html {
   background: #e3e3e3;
 }
@@ -853,4 +841,4 @@ ul {
     text-align: left;
     vertical-align: bottom; }
 
-/*# sourceMappingURL=main.f16803fd.css.map*/
+/*# sourceMappingURL=main.6be3013f.css.map*/
