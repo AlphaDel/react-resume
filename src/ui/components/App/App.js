@@ -10,7 +10,6 @@ export default class App extends Component {
           <div className={styles['content']}>
             {this.props.children}
           </div>
-        
       </div>
     )
   }

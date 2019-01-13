@@ -16,7 +16,7 @@ const SkillsBlock = ({ style, skills, tools }) => (
 <ScreenBlock id="Resume-skills" style={style} className="ResumeSkillsBlock">
   <div className="container">
     <div className="heading ResumeSkillsBlock-skills-heading">
-      <h2>My Skill</h2>  
+      <h2>My Skills</h2>  
     </div>
     
     <div className="ResumeSkillsBlock-skills">

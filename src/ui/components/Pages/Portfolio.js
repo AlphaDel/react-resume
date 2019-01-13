@@ -42,15 +42,11 @@ class Portfolio extends Component {
                     style={appTheme.aboutMeColor.style}
                     fullName={fullName}
                     headline={this.props.headline}
-                    summary={this.props.summary}
-                    pictureUrl={this.props.pictureUrl}
-                    dateOfBirth={this.props.dateOfBirth}
-                    emailAddress={this.props.emailAddress}
+                    {...this.props}
                 />
                 <WorkAndEducationBlock 
                     style={appTheme.workEduColor.style}
-                    positions={this.props.positions}
-                    educations={this.props.educations}
+                    {...this.props}
                 />
                 <SkillsBlock
                     style={appTheme.skillColor.style}

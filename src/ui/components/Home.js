@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import styles from './Home.scss'
 
 class Home extends Component {
-    componentDidMount() {
-        console.log("Home");
-    }
     render() {
         return (
             <div>
