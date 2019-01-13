@@ -4,10 +4,10 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 import './AboutMeBlock.css'
 import "animate.css/animate.min.css"
-
+import { GITHUB, FACEBOOK } from '../../../constants/websiteType'
 import { AgeFromDateString } from 'age-calculator'
 
-const AboutMeBlock = ({ style, fullName, headline, summary, pictureUrl, dateOfBirth, emailAddress }) => (
+const AboutMeBlock = ({ style, fullName, headline, summary, pictureUrl, dateOfBirth, emailAddress, websites }) => (
     <ScrollAnimation animateIn="fadeIn" delay={3}>
         <ScreenBlock id="Resume-aboutMe" style={style} className="ResumeAboutMeBlock">
             <div className="container">
@@ -27,8 +27,11 @@ const AboutMeBlock = ({ style, fullName, headline, summary, pictureUrl, dateOfBi
 
                         <p>contact : {emailAddress}</p>
 
-                        <a className="ResumeAboutMeBlock-contact-link" href="https://www.github.com/wuttinanDEV" target="blank"><i className="fab fa-github-square fa-3x"></i></a>
-                        <a className="ResumeAboutMeBlock-contact-link" href="https://www.fb.me/wuttinan.wch" target="blank"><i className="fab fa-facebook-square fa-3x"></i></a>
+                        {
+                            websites.map((data) => 
+                                <a className="ResumeAboutMeBlock-contact-link" key={data.type} href={data.url} target="blank"><i className={`fab ${data.icon} fa-3x`}></i></a>
+                            )           
+                        }
                     </div>
                     <div className="ResumeAboutMeBlock-profilePicture Resume-profilePicture">
                         <img alt="" src={pictureUrl} />

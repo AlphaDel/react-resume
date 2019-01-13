@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styles from './Header.scss'
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom'
+import data from '../../data/data.json'
 
 export default class Header extends Component {
   
@@ -21,9 +22,7 @@ export default class Header extends Component {
 
   }
   render() {
-
-    var linkGithub = <a className={styles['menu__link']} href="https://github.com/wuttinanDEV" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square fa-2x"></i></a>
-    var linkFacebook = <a className={styles['menu__link']} href="https://fb.me/wuttinan.wch" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-square fa-2x"></i></a>
+    const { websites } = data
     return (
         <header className={styles['header']}>
         <nav>
@@ -35,12 +34,13 @@ export default class Header extends Component {
           <span className={styles['typing-style']} ref={(el) => { this.el = el; }}/>
 
           <ul className={styles['menu']}>
-            <li className={styles['menu__item']}>
-              {linkGithub}
-            </li>
-            <li className={styles['menu__item']}>
-              {linkFacebook}
-            </li>
+            {
+              websites.map((data) => 
+                <li key={data.type} className={styles['menu__item']}>
+                  <a className={styles['menu__link']} href={data.url} target="_blank" rel="noopener noreferrer"><i className={`fab ${data.icon} fa-2x`}></i></a>
+                </li>
+              )
+            }
           </ul>
         </nav>
       </header>
