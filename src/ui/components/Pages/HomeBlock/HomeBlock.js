@@ -17,8 +17,6 @@ const HomeBlock = ({ style, fullName, headline }) => (
                 <div className="ResumeHomeBlock-headline">
                     <h1>
                         {fullName}
-                    
-                        {console.log('ref : ' ,  )}
                     </h1>
                     <h2>
                         {headline}

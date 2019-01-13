@@ -8,18 +8,20 @@
   "lastName": "Chaoyos",
   "emailAddress": "wuttinan.wch@gmail.com",
   "headline": "Web Developer",
-  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at GENERAL ELECTRONIC COMMERCE SERVICES CO.,LTD. as \"Programmer\". Skilled in AngularJS, React, PHP, MYSQL, MSSQL. <br/>My favourite stack : Angular, React, Docker",
+  "summary": "Graduated from Suranaree University Of Technology, bachelor of Computer Engineering. Currently working at AppMan Co., Ltd. as \"Software engineer\". Skilled in Javascript, React, Cordova <br/>My favourite stack : React, Docker",
   "pictureUrl": "https://lh3.googleusercontent.com/eVI5vpJOWdNRuquUObj0VM0e3xd_YnG0SqT6_ylbIEeqRqXInpjoJuXq-US8x27K0yFj2SjkaMEP7VkDIyYOmICI2unRQDyNOFbQHNyfh2KVCRo-46_ST34t_3aWXE-k889ctUyjSA=s339-no",
   "dateOfBirth": "1994-10-17",
   "mainAddress": "Bangkok Thailand",
   "websites": [
     {
       "type": "Github",
-      "url": "https://www.github.com/wuttinanDEV"
+      "url": "https://www.github.com/AlphaDel",
+      "icon": "fa-github-square"
     },
     {
       "type": "Facebook",
-      "url": "https://fb.me/wuttinan.wch"
+      "url": "https://fb.me/wuttinan.wch",
+      "icon": "fa-facebook-square"
     }
   ],
   "phoneNumbers": [
@@ -29,7 +31,7 @@
     },
     {
       "type": "Personal",
-      "number": "+66 845380145"
+      "number": ""
     }
   ],
   "imAccounts": [
@@ -47,20 +49,28 @@
   ],
   "positions": [
     {
-      "title": "Programmer",
-      "summary": "Angular, JAVA (Spring boot), MSSQL, MYSQL, Linux",
-      "startDate": "2017",
+      "title": "Software engineer",
+      "summary": "React, Cordova",
+      "startDate": "2018",
       "endDate": "Today",
       "isCurrent": true,
-      "company": "GEC"
+      "company": "AppMan Co., Ltd"
+    },
+    {
+      "title": "Programmer",
+      "summary": "Angular, JAVA (Spring boot), MSSQL, MYSQL, Linux",
+      "startDate": "2016",
+      "endDate": "2018",
+      "isCurrent": false,
+      "company": "General Electronic Commerce Services Co.,Ltd."
     },
     {
       "title": "Trainee",
       "summary": "Angular, JAVA (JPA), Robot framework, Agile Scrum",
       "startDate": "2016",
       "endDate": "2017",
-      "isCurrent": true,
-      "company": "GEC"
+      "isCurrent": false,
+      "company": "General Electronic Commerce Services Co.,Ltd."
     }
     
   ],
@@ -256,7 +266,7 @@
       "subcategory": "react",
       "links": [
         {
-          "url": "https://github.com/wuttinanDEV/react-utility",
+          "url": "https://github.com/AlphaDel/react-utility",
           "text": "Visit website"
         }
       ],
@@ -278,7 +288,7 @@
       "subcategory": "angular",
       "links": [
         {
-          "url": "https://github.com/wuttinanDEV/angular4-firebase",
+          "url": "https://github.com/AlphaDel/angular4-firebase",
           "text": "Visit website"
         }
       ],
@@ -300,7 +310,7 @@
       "subcategory": "php",
       "links": [
         {
-          "url": "https://github.com/wuttinanDEV/bot-line-php",
+          "url": "https://github.com/AlphaDel/bot-line-php",
           "text": "Visit website"
         }
       ],
@@ -319,7 +329,7 @@
       "subcategory": "git",
       "links": [
         {
-          "url": "https://github.com/wuttinanDEV/",
+          "url": "https://github.com/AlphaDel/",
           "text": "Visit website"
         }
       ],
